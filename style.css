@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+:root {
+  --primary: hsl(258, 100%, 63%);
+  --primary-light: hsl(258, 90%, 81%);
+  --primary-dark: hsl(258, 82%, 35%);
+  --primary-darkest: hsl(258, 79%, 22%);
+  --white: hsl(258, 100%, 96%);
+  --font: 'Lato', sans-serif;
+}
+
+body {
+  font-size: 2rem;
+  font-family: var(--font);
+  background-color: var(--primary);
+}
+
+h1,h2,h4 {
+  color: var(--white);
+  margin: 5vh 0;
+  font-weight: 900;
+  text-align: center;
+}
+
+form{
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 1rem;
+  }
+}
+
